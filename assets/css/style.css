@@ -29,7 +29,7 @@ header {
 .nav-links > *, .footer-links > * {
     padding: 0px 25px;
     font-family:'Courier New', Courier, monospace;
-    font-size: 20px;
+    font-size: 30px;
     color:var(--navfootlinks);
     background-color: white;
 
@@ -39,6 +39,7 @@ h1 {
     display: inline-block;
     color: var(--navfootlinks);
     background-color: black;
+    font-size: 40px;
 }
 
 .nav-links, .footer-links {
@@ -48,10 +49,7 @@ h1 {
 .nav-links li, .footer-links li, .nav-links a, .footer-links a {
     display: inline-block;
     background-color: black;
-    font-weight:;
 }
-
-
 
 a:link{
     text-decoration: none;
@@ -64,9 +62,11 @@ a:link{
     background-color: black;
     background-size: 1385px 817px;
     font-size: 50px;
-    text-align: center;
+    text-align:right;
     color: white;
     border-top: #170055 solid 10px;
+    background-image: url("../images/1.png");
+    background-size: contain;
 }
 
 
@@ -103,14 +103,25 @@ aside h2 {
     float: right;
 }
 
-p {
+section {
     width: 85%;
     height: 150px;
     background-color:#170055;
     float: right;
 }
 
-section div {
+p {
+    width: 82%;
+    height: 140px;
+    padding: 22px;
+    background-color:#170055;
+    float: left;
+    color: aliceblue;
+    font-size: 22px;
+    text-align: left;
+}
+
+article div {
     width: 42.5%;
     height: 150px;
     background-color: #170055;
