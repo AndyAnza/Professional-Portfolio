@@ -51,9 +51,17 @@ h1 {
     background-color: black;
 }
 
-a:link{
+a:link, a:visited{
     text-decoration: none;
     color: white;
+}
+
+a:hover {
+    color:#7ECA9C
+}
+
+a:active {
+    color: hotpink
 }
 
 /*Main image*/
@@ -121,8 +129,10 @@ aside h2 {
 }
 
 .main-project h3 {
-    background: black;
-    color: white;
+    position:relative;
+    bottom: 0;
+    right: 0;
+    text-align: right;
     font-size: 30px;
 }
 
@@ -141,13 +151,20 @@ aside h2 {
     background-size: cover;
     background-repeat: no-repeat;
     border: #CCFFBD 2px solid;
+    background: url('https://www.google.com/webhp?hl=es-419&ictx=2&sa=X&ved=0ahUKEwibqLTVzdX7AhUPL0QIHZTlDgEQPQgJ')
+}
+
+.main.project:hover, .project-1 div:hover, .project-2 div:hover,.project-3:hover, .project-4:hover {
+    opacity: 40%;
 }
 
 h3 {
-    display:inline;
+    position:relative;
+    bottom: 0;
+    right: 0;
+    text-align: right;
     color: #1C1427;;
     background-color:#7ECA9C ;
-    text-align: right;
     padding: 10px;
 }
 
@@ -165,7 +182,9 @@ p {
 /* Footer */
 
 footer {
-    float: right;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
     width: 85%;
     height: 50px ;
     background-color: black;
@@ -174,6 +193,7 @@ footer {
 
 .footer-links > * {
     color: white;
+    background-color: black;
 }
 
 
