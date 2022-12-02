@@ -12,35 +12,48 @@
     --text: white;
 }
 
-body {
-    background-color: var(--background) ;
-}
-
 /*Navigation bar*/
 
-header {
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    padding: 30px 20px;
+.header{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px 20px;
     background-color: black;
 }
+
 
 h1 {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    width: 50%;
     background-color: black;
     color: #7ECA9C;
-    font-size: 40px;
+    font-size: 35px;
 }
+
 
 .nav-links li, .footer-nav li, .nav-links a, .footer-nav a {
-    display: inline-block;
+    display: inline-flex;
     background-color: black;
+    
 }
 
-ul li {
-    font-size: 30px;
+.nav-links {
+    width: 50%;
+    color: white;
+    text-align: left;
+    background-color: black;
+
 }
+
+.nav-links li {
+    width: 22%;
+    font-size: 28px;
+
+}
+
 
 /*Pseudo Class*/
 
