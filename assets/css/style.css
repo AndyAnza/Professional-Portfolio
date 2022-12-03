@@ -1,11 +1,4 @@
 
-:root{
-    --background:#170055;
-    --navfootlinks:#B5FFD9;
-    --asidetxt:#AE00FB;
-    --text: white;
-}
-
 /* Header and Navigation bar*/
 
 .header{
@@ -31,7 +24,13 @@ h1 {
     font-size: 28px;
 }
 
-/*Pseudo Class*/
+/*Pseudo-elements and Pseudo-classes*/
+
+h1::after {
+    content: " Anza";
+    color: #7ECA9C;
+    font-size: 35px;
+}
 
 a:link, a:visited{
     text-decoration: none;
@@ -86,6 +85,7 @@ p {
     padding: 55px;
     color: aliceblue;
     font-size: 22px;
+    line-height: 150%;
     text-align: justify;
 }
 
