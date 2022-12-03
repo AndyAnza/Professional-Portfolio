@@ -1,4 +1,4 @@
-# Professional-Portfolio
+# My-Professional-Portfolio
 
 ## Description
 This site was made to show future projects that will be part of my portfolio so that hiring managers can know more about me and my work. 
