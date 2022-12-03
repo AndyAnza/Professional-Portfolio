@@ -11,14 +11,14 @@ The web application is divided into different sections:
  - Footer navigation bar: Here you'll find my contact info like my phone, mail, and links that will lead you to my github page, my twitter and even my spotify where you will find cool playlist thats I've made.
  
  ## Technical
--Pseudo-classes were implemented. All links in the footer and header will change color to green by hovering over them, and will change to hotpink once you click on them.
--Project images borders and titles will also change to hotpink if you hover over them. The opacity of the image will also change.
--To create all the different sections of the web application I used Flexbox,creating rows to divide the aside section and the main section where all my projects were displayed.
--Added links that will scroll the UI to the corresponding section.
--Created a bigger image/section for the main project.
--Added media queries that works for devices with screens of 780px and 480px.
--My Last Name at the top of the Page is shown by using Pseudo-elements.
--Alt attributes are found in each of the images used on the site.
+- Pseudo-classes were implemented. All links in the footer and header will change color to green by hovering over them, and will change to hotpink once you click on them.
+- Project images borders and titles will also change to hotpink if you hover over them. The opacity of the image will also change.
+- To create all the different sections of the web application I used Flexbox,creating rows to divide the aside section and the main section where all my projects were displayed.
+- Added links that will scroll the UI to the corresponding section.
+- Created a bigger image/section for the main project.
+- Added media queries that works for devices with screens of 780px and 480px.
+- My Last Name at the top of the Page is shown by using Pseudo-elements.
+- Alt attributes are found in each of the images used on the site.
 
 ## Usage
 
