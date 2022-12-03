@@ -6,48 +6,30 @@
     --text: white;
 }
 
-/*Navigation bar*/
+/* Header and Navigation bar*/
 
 .header{
-    display:flex;
-    flex-direction: row;
     width: 100%;
     padding: 20px 20px;
     background-color: black;
-}
-
-
-h1 {
     display: flex;
     flex-direction: row;
-    text-align: left;
-    width: 50%;
-    background-color: black;
-    color: #7ECA9C;
-    font-size: 35px;
+
 }
 
-
-.nav-links li, .footer-nav li, .nav-links a, .footer-nav a {
-    display: inline-flex;
-    background-color: black;
-    
+h1 {
+    width: 60%;
+    color: #7ECA9C;
+    font-size: 35px;
+    text-align: left;
 }
 
 .nav-links {
-    width: 50%;
-    color: white;
-    text-align: left;
-    background-color: black;
-
-}
-
-.nav-links li {
-    width: 22%;
+    display: inline-flex;
+    justify-content: space-around;
+    flex-grow: 1;
     font-size: 28px;
-
 }
-
 
 /*Pseudo Class*/
 
@@ -75,10 +57,23 @@ a:active {
     background-size: contain;
     color: white;
     font-size: 50px;
-    text-align:right;
+    display: flex;
+    justify-content: space-between;
 }
 
-/* Main */
+/* Divs with Subtitles*/
+#about-me, #work, #empty-space1, #empty-space2, #contact{
+    width:15%;
+    background-color: #40394A;
+    color: #CCFFBD;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: right;
+}
+
+/* Main Project*/
 
 .main, article, .project1-2, .project3-4, .footer {
     display:flex;
@@ -86,79 +81,78 @@ a:active {
     background-color: #1C1427;
 }
 
-#about-me, #work, #empty-space1, #empty-space2, #contact{
-    width:15%;
-    background-color: #40394A;
-    color: #CCFFBD;
-    font-size: 45px;
-}
-
-h2 {
-    padding: 32px 20px 0 0;
-    background-color: #40394A;
-    font-size: 40px;
-    text-align: right;
-}
-
-    .main-project{
-    width: 73%;
-    height: 600px;
-    margin: 2%;
-    border: 2px solid #7ECA9C ; 
-    padding: 2%;
-    background-image: url("../images/262428f5e5b029f0c846870a700ef3b2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-    .project1, .project2, .project3, .project4{
-    width: 34.5%;
-    height:200px;
-    margin: 2%;
-    border: 2px solid #7ECA9C ;
-    padding: 5px;
-    background-color: black;
-    }
-
-    .number, .mail, .github, .twitter, .spotify {
-    width: 19%;
-    color: white;
-    font-size: 28px;
-    text-align: center;
-    }
-
-    .footer-nav{
-    width: 85%;
-    padding: 18px;
-    margin-top: 30px;
-    background-color: black;
-    }
-
-    /*HOVER PROJECTS*/
-
-    .main-project:hover, .project1:hover, .project2:hover, .project3:hover, .project4:hover {
-    opacity: 50%;
-    cursor:pointer;
-    } 
-
-h3 {
-    position:relative;
-    bottom: 0;
-    right: 0;
-    text-align: right;
-    color: #1C1427;;
-    background-color:#7ECA9C ;
-    padding: 10px;
-}
-
 p {
     width: 85%;
     padding: 55px;
-    background-color:#1C1427;
     color: aliceblue;
     font-size: 22px;
     text-align: justify;
 }
+
+.main-project {
+    width: 73%;
+    height: 600px;
+    margin: 2%;
+    border: 2px solid #7ECA9C ; 
+    position: relative;
+}
+
+.main-project img, .project1 img, .project2 img, .project3 img, .project4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Projects from 1 to 4*/
+
+.project1, .project2, .project3, .project4{
+    width: 34.5%;
+    height:200px;
+    margin: 2%;
+    border: 2px solid #7ECA9C ;
+    background-color: black;
+    position: relative;
+    }
+
+h3 {
+    background-color:#7ECA9C ;
+    padding: 10px;
+    font-size: 22px;
+    color: white;
+} 
+
+.img-txt {
+    position: absolute;
+    top: 70%;
+}
+
+/*Footer and nav*/
+
+.footer-nav{
+    width: 85%;
+    padding: 18px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+.number, .mail, .github, .twitter, .spotify {
+    color: white;
+    font-size: 20px;
+    }
+
+    /*Hover over projects*/
+
+.main-project:hover, .project1:hover, .project2:hover, .project3:hover, .project4:hover {
+    opacity: 70%;
+    cursor:pointer;
+    border-color: hotpink;
+    } 
+
+h3:hover {
+    transition: background-color .5s;
+    background-color: hotpink;
+    }
 
 
 /* Media queries*/
@@ -198,6 +192,7 @@ p {
     h3 {
         font-size: 16px;
         padding: 1px;
+        font-size: 16px;
     }
 
     .main, article, #contact, .footer {
@@ -218,8 +213,6 @@ p {
     }
 
     .project1-2, .project3-4 {
-        display:flex;
-        flex-direction: wrap;
         width: 100%;
         height: 80px;
     }
@@ -235,7 +228,6 @@ p {
 
 .footer, .footer-nav{
     width: 100%;
-    margin: 0;
     }
 
     .number, .mail, .github, .twitter, .spotify {
@@ -277,7 +269,7 @@ p {
     }
 
     h3 {
-        font-size: 16px;
+        font-size: 14px;
         padding: 1px;
     }
 
