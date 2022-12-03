@@ -26,4 +26,6 @@ Click the link below to enter the site.
 https://andyanza.github.io/Professional-Portfolio/
 
 ## License
-I do not own the copyrights of any of the images that were used in this page. Except from mine of course.
+I do not own the copyrights of any of the images that were used in this page. Except from my profile pic of course.
+
+![alt text](assets/images/andyanza.github.io_Professional-Portfolio_.png)
